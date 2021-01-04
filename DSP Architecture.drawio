@@ -1,1 +1,58 @@
-<mxfile host="app.diagrams.net" modified="2021-01-04T02:01:45.221Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" version="14.1.3" etag="Nnqo49v4Ss5SKFscPW-_" type="github"><diagram id="7EE-afxohkWHiLuHs_w1">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-01-04T02:13:29.420Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="10t-F1wGULvMwktdTTyx" version="14.1.3" type="github">
+  <diagram id="7EE-afxohkWHiLuHs_w1" name="Page-1">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AiV5-O5FY2f7VXf_E68s-12" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="41" y="161" width="160" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="AiV5-O5FY2f7VXf_E68s-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="AiV5-O5FY2f7VXf_E68s-12">
+          <mxGeometry y="40" width="160" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="AiV5-O5FY2f7VXf_E68s-11" value="애드 네트워크" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="AiV5-O5FY2f7VXf_E68s-12">
+          <mxGeometry width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AiV5-O5FY2f7VXf_E68s-1" value="Google" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="71" y="231" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AiV5-O5FY2f7VXf_E68s-2" value="Kakao&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="71" y="271" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AiV5-O5FY2f7VXf_E68s-3" value="IgaWorks&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="71" y="351" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AiV5-O5FY2f7VXf_E68s-6" value="Mixer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="71" y="311" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AiV5-O5FY2f7VXf_E68s-7" value="Taboola" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="71" y="391" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AiV5-O5FY2f7VXf_E68s-8" value="AdFit" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="71" y="431" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AiV5-O5FY2f7VXf_E68s-13" value="Inliple DSP" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="160" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AiV5-O5FY2f7VXf_E68s-15" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.twoWayArrow;dy=0.6;dx=35;" vertex="1" parent="1">
+          <mxGeometry x="230" y="310" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AiV5-O5FY2f7VXf_E68s-16" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="1">
+          <mxGeometry x="360" y="190" width="320" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="AiV5-O5FY2f7VXf_E68s-17" value="platform" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="386" y="220" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AiV5-O5FY2f7VXf_E68s-18" value="빌링 DB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="261" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AiV5-O5FY2f7VXf_E68s-19" value="상품 DB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="301" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AiV5-O5FY2f7VXf_E68s-20" value="" style="shape=doubleArrow;whiteSpace=wrap;html=1;rotation=45;" vertex="1" parent="1">
+          <mxGeometry x="486" y="254.5" width="54" height="39" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
