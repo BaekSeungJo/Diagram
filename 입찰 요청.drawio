@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-01-29T04:41:20.678Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="El6cPBOrtlYCNm6aGd1T" version="14.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-01T01:53:51.212Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="4FTKdGeUT17x1UuEBv7b" version="14.1.8" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="1673" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="981" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -16,10 +16,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-5" value=":KakaoRtbBidService" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
-          <mxGeometry x="240" y="80" width="140" height="730" as="geometry" />
+          <mxGeometry x="240" y="80" width="140" height="1590" as="geometry" />
         </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-6" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="3nuBFxr9cyL0pnOWT2aG-5" vertex="1">
-          <mxGeometry x="65" y="80" width="10" height="620" as="geometry" />
+          <mxGeometry x="65" y="80" width="10" height="1450" as="geometry" />
         </mxCell>
         <mxCell id="YZATPcFQY8fHMHnWEMfY-6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="3nuBFxr9cyL0pnOWT2aG-5" vertex="1">
           <mxGeometry x="70" y="140" width="10" height="20" as="geometry" />
@@ -186,7 +186,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="YZATPcFQY8fHMHnWEMfY-47" value=":OpenRTBServiceimpl" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
-          <mxGeometry x="1330" y="80" width="140" height="1020" as="geometry" />
+          <mxGeometry x="1330" y="80" width="140" height="1320" as="geometry" />
         </mxCell>
         <mxCell id="YZATPcFQY8fHMHnWEMfY-50" value="return" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;shadow=0;strokeWidth=1;" parent="1" target="3nuBFxr9cyL0pnOWT2aG-5" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -204,7 +204,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="YZATPcFQY8fHMHnWEMfY-49" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
-          <mxGeometry x="1395" y="710" width="10" height="540" as="geometry" />
+          <mxGeometry x="1395" y="710" width="10" height="850" as="geometry" />
         </mxCell>
         <mxCell id="YZATPcFQY8fHMHnWEMfY-53" value=":RTBAdFactory" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
           <mxGeometry x="1520" y="80" width="140" height="750" as="geometry" />
@@ -229,7 +229,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="YZATPcFQY8fHMHnWEMfY-57" value=":RTBShopAdService" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
-          <mxGeometry x="1680" y="80" width="140" height="1190" as="geometry" />
+          <mxGeometry x="1680" y="80" width="140" height="1320" as="geometry" />
         </mxCell>
         <mxCell id="YZATPcFQY8fHMHnWEMfY-58" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="YZATPcFQY8fHMHnWEMfY-57" vertex="1">
           <mxGeometry x="65" y="680.5" width="10" height="19" as="geometry" />
@@ -265,13 +265,13 @@
           <mxGeometry x="1420" y="701" width="250" height="20" as="geometry" />
         </mxCell>
         <mxCell id="qvotjqQSJRLeDj7uGDNd-2" value="for 1..n in RtbUtils.SORT_NM_LIST" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1420" y="510" width="150" height="60" as="geometry" />
+          <mxGeometry x="1420" y="566" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="qvotjqQSJRLeDj7uGDNd-6" value="for i..n in RtbUtils.SORT_NM_LIST" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
           <mxGeometry x="1405" y="681" width="200" height="20" as="geometry" />
         </mxCell>
         <mxCell id="qvotjqQSJRLeDj7uGDNd-3" value="광고주 아이디 기준&amp;nbsp;&lt;br&gt;RTBShopData 생성" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1420" y="560" width="150" height="55" as="geometry" />
+          <mxGeometry x="1420" y="616" width="150" height="55" as="geometry" />
         </mxCell>
         <mxCell id="qvotjqQSJRLeDj7uGDNd-9" value="타겟팅 서비스 생성" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" edge="1" parent="1" source="YZATPcFQY8fHMHnWEMfY-55">
           <mxGeometry x="-0.0323" relative="1" as="geometry">
@@ -362,8 +362,8 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qvotjqQSJRLeDj7uGDNd-32" value="1. 추천 서버 비율 조정&lt;br&gt;2. 광고주 검증" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
-          <mxGeometry x="1755" y="865" width="130" height="30" as="geometry" />
+        <mxCell id="qvotjqQSJRLeDj7uGDNd-32" value="1. 추천 서버 비율 조정&lt;br&gt;2. 광고주 검증" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="1777" y="865" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="qvotjqQSJRLeDj7uGDNd-34" value="setAdInfoList(userid) : 광고주 캠페인 리스트 조회" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" edge="1" parent="1" target="qvotjqQSJRLeDj7uGDNd-13">
           <mxGeometry x="-0.0323" relative="1" as="geometry">
@@ -431,6 +431,54 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1401.9999999999995" y="1249.9999999999998" as="targetPoint" />
             <mxPoint x="1766" y="1250.4892027334852" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qvotjqQSJRLeDj7uGDNd-58" value="AdConfigData List 검증&lt;br&gt;( null, site, image, count )&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="1275" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qvotjqQSJRLeDj7uGDNd-59" value="if(KEY_CYCLER_EN_BANNER) this.cyclerReset = true&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="1320" width="310" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qvotjqQSJRLeDj7uGDNd-60" value="return" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;shadow=0;strokeWidth=1;" edge="1" parent="1" target="3nuBFxr9cyL0pnOWT2aG-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1060.0035294117647" y="1345.82" as="targetPoint" />
+            <mxPoint x="1399.4999999999995" y="1345.8199999999997" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qvotjqQSJRLeDj7uGDNd-61" value="adListTargeting(baseOn, RTBConfigInfo)" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;exitX=1.25;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="1390" as="sourcePoint" />
+            <mxPoint x="1399.9999999999995" y="1390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="387.5" y="1390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qvotjqQSJRLeDj7uGDNd-66" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1405" y="1420" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qvotjqQSJRLeDj7uGDNd-67" value="salePriceBuilderSetting&lt;br&gt;(상품 판매 금액, 할인 판대 금액에 따른 할인율 계산 )" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;exitX=0.952;exitY=0.812;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="qvotjqQSJRLeDj7uGDNd-66" source="YZATPcFQY8fHMHnWEMfY-49">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1410" y="1400" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1435" y="1400" />
+              <mxPoint x="1435" y="1420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qvotjqQSJRLeDj7uGDNd-69" value="return" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;shadow=0;strokeWidth=1;" edge="1" parent="1" target="3nuBFxr9cyL0pnOWT2aG-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="305.3103448275863" y="1450" as="targetPoint" />
+            <mxPoint x="1394.9999999999995" y="1450" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qvotjqQSJRLeDj7uGDNd-70" value="setBidResponseData" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;exitX=1.25;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="315" y="1480" as="sourcePoint" />
+            <mxPoint x="1400" y="1480" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="392.5" y="1480" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
