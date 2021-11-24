@@ -1,1 +1,167 @@
-<mxfile host="app.diagrams.net" modified="2021-11-24T06:21:12.002Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" version="15.5.4" etag="eX7KZ52rTSJP6z2ewelu" type="github"><diagram id="_dlns_Dd5ReVDMEz_RVe">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-11-24T08:51:23.256Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="k41N7lfF4ib3gbcRQUvn" version="15.5.4" type="github">
+  <diagram id="_dlns_Dd5ReVDMEz_RVe" name="Page-1">
+    <mxGraphModel dx="1185" dy="699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AgAntlIaIiCfEKC43YWO-29" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="440" width="1060" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-10" value="카카오 서비스&lt;br&gt;사용자" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="27.4" y="545" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-13" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.android;fillColor=#A4CA39;strokeColor=none" vertex="1" parent="1">
+          <mxGeometry x="112.4" y="655" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-14" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.apple;fillColor=#1B1C1C;strokeColor=none" vertex="1" parent="1">
+          <mxGeometry x="110" y="710" width="32.4" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-15" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.chrome" vertex="1" parent="1">
+          <mxGeometry x="112.4" y="610" width="30" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-23" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="320" y="520" width="290" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-26" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=12;opacity=30;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="670" as="sourcePoint" />
+            <mxPoint x="270" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-28" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="780" y="516.5" width="540" height="413.5" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-30" value="uid or adid 전달" style="endArrow=classic;html=1;rounded=0;fontSize=12;opacity=30;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="AgAntlIaIiCfEKC43YWO-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="500" as="sourcePoint" />
+            <mxPoint x="810" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-33" value="SSP 서비스" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="862.5" y="530" width="115" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-50" value="매체 서비스" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="400" y="530" width="115" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-51" value="카카오 플랫폼" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="603.75" y="460" width="172.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-58" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="330" y="570" width="270" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-59" value="&lt;ul&gt;&lt;li&gt;모바일&lt;/li&gt;&lt;ul&gt;&lt;li&gt;카카오 uid 식별&lt;/li&gt;&lt;li&gt;adid 식별&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;웹&lt;/li&gt;&lt;ul&gt;&lt;li&gt;카카오 uid 식별&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=left;" vertex="1" parent="AgAntlIaIiCfEKC43YWO-58">
+          <mxGeometry x="95.625" width="174.375" height="125.00000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-60" value="사용자 식별&lt;br&gt;모듈" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontStyle=3" vertex="1" parent="AgAntlIaIiCfEKC43YWO-58">
+          <mxGeometry width="101.25" height="125.00000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-61" value="&lt;font style=&quot;font-size: 15px&quot;&gt;www.daum.net&lt;br&gt;mobile kakao app&lt;br&gt;...&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="385" y="770" width="145" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-65" value="&lt;div&gt;&lt;span&gt;CookieFirst -&amp;gt; MATCHED 설정으로&lt;/span&gt;&lt;/div&gt;DSP에 보낼 입찰 요청 모수 필터링" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.oval_callout;fontSize=15;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="770" y="396.5" width="310" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-66" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1060" width="780" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-67" value="모비온 플랫폼" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="590" y="1080" width="172.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-68" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="325" y="1140" width="280" height="413.5" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-69" value="카카오 OpenRTB 서버" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="361.25" y="1160" width="192.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-70" value="&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#000000&quot;&gt;입찰 요청 전문 분석&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#000000&quot;&gt;adid가 유입된 경우 auid 조회&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#000000&quot;&gt;3. auid에 맵핑된 모수 조회&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#000000&quot;&gt;SORT LIST에 따른 광고 조회&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#000000&quot;&gt;입찰 응답 전문 생성&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#000000&quot;&gt;응답&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;fontColor=#FF3333;align=left;" vertex="1" parent="1">
+          <mxGeometry x="357.5" y="1210" width="200" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-71" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="776.25" y="1140" width="280" height="413.5" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-72" value="광고주 서버" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="836.25" y="1160" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-73" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="800" y="1220" width="240" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-74" value="카카오 사용자 uid에&lt;br&gt;매칭된 모비온 사용자 uid(auid) 조회" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="AgAntlIaIiCfEKC43YWO-73">
+          <mxGeometry x="85" width="155" height="125.00000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-75" value="3.6&lt;br&gt;legacy" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontStyle=3" vertex="1" parent="AgAntlIaIiCfEKC43YWO-73">
+          <mxGeometry width="90" height="125.00000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-76" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="800" y="1220" width="240" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-77" value="3.6 광고주 스크립트가&lt;br&gt;삽인된 광고주 카카오&lt;br&gt;쿠키 매칭 API 호출" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="AgAntlIaIiCfEKC43YWO-76">
+          <mxGeometry x="85" width="155" height="125.00000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-78" value="3.6&lt;br&gt;legacy" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontStyle=3" vertex="1" parent="AgAntlIaIiCfEKC43YWO-76">
+          <mxGeometry width="90" height="125.00000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-79" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="800" y="1390" width="240" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-80" value="4.0 광고주 스크립트가&lt;br&gt;삽입된 광고주 카카오&lt;br&gt;쿠키 매칭 API 호출" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="AgAntlIaIiCfEKC43YWO-79">
+          <mxGeometry x="85" width="155" height="125.00000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-81" value="4.0&lt;br&gt;rebuild" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontStyle=3" vertex="1" parent="AgAntlIaIiCfEKC43YWO-79">
+          <mxGeometry width="90" height="125.00000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-82" value="입찰 요청&lt;br&gt;&lt;u&gt;/rtb/rtbApi&lt;/u&gt;" style="curved=1;endArrow=classic;html=1;rounded=0;fontSize=15;fontColor=#000000;opacity=30;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=5;" edge="1" parent="1" source="AgAntlIaIiCfEKC43YWO-84" target="AgAntlIaIiCfEKC43YWO-68">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="1010" as="sourcePoint" />
+            <mxPoint x="670" y="960" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="670" y="1010" />
+              <mxPoint x="630" y="980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-83" value="사용자가 광고주 사이트에서 상품을&lt;br&gt;볼때 해당 사용자가 쿠키 매칭을 6시간&lt;br&gt;이내에 한적이 없는 경우&lt;br&gt;쿠키매칭 시도&lt;div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.oval_callout;fontSize=15;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="931" y="960" width="310" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-86" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="810" y="570" width="260" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-84" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;fontColor=#000000;align=left;" vertex="1" parent="AgAntlIaIiCfEKC43YWO-86">
+          <mxGeometry width="260" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-49" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;opacity=30;exitX=0.274;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="AgAntlIaIiCfEKC43YWO-86" source="AgAntlIaIiCfEKC43YWO-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="253" as="sourcePoint" />
+            <mxPoint x="137.5" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-44" value="" style="group" vertex="1" connectable="0" parent="AgAntlIaIiCfEKC43YWO-86">
+          <mxGeometry x="10" y="20" width="240" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-32" value="카카오 사용자 uid에&lt;br&gt;매칭된 모비온 사용자 uid(auid) 조회" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="AgAntlIaIiCfEKC43YWO-44">
+          <mxGeometry x="85" width="155" height="125.00000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-43" value="CookieFirst" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontStyle=3" vertex="1" parent="AgAntlIaIiCfEKC43YWO-44">
+          <mxGeometry width="90" height="125.00000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-46" value="" style="group" vertex="1" connectable="0" parent="AgAntlIaIiCfEKC43YWO-86">
+          <mxGeometry x="10" y="170" width="240" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-35" value="uid가 존재하지 않는 &lt;br&gt;요청에 대하여 adid가 &lt;br&gt;존재하는 요청만 DSP에&lt;br&gt;보낼 것인가?&lt;br&gt;&lt;br&gt;&lt;u&gt;모비온은 &lt;b&gt;&lt;font color=&quot;#ff3333&quot;&gt;ON&lt;/font&gt; &lt;/b&gt;상태&lt;/u&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="AgAntlIaIiCfEKC43YWO-46">
+          <mxGeometry x="90" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-45" value="MATCHED" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontStyle=1" vertex="1" parent="AgAntlIaIiCfEKC43YWO-46">
+          <mxGeometry width="90" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-87" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="330" y="570" width="270" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-88" value="&lt;ul&gt;&lt;li&gt;모바일&lt;/li&gt;&lt;ul&gt;&lt;li&gt;카카오 uid 식별&lt;/li&gt;&lt;li&gt;adid 식별&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;웹&lt;/li&gt;&lt;ul&gt;&lt;li&gt;카카오 uid 식별&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=left;" vertex="1" parent="AgAntlIaIiCfEKC43YWO-87">
+          <mxGeometry x="95.625" width="174.375" height="125.00000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="AgAntlIaIiCfEKC43YWO-89" value="사용자 식별&lt;br&gt;모듈" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontStyle=3" vertex="1" parent="AgAntlIaIiCfEKC43YWO-87">
+          <mxGeometry width="101.25" height="125.00000000000001" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
