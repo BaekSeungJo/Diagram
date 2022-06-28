@@ -1,1 +1,82 @@
-<mxfile host="app.diagrams.net" modified="2022-06-28T08:52:21.496Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" version="17.1.3" etag="yHdLT1XI_x_10ivB5Pk6" type="github"><diagram id="TzVXNC2sTXzUrQoLoyxp">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-28T08:56:35.789Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="3ofRUqwRrcznrYBSoHJb" version="17.1.3" type="github">
+  <diagram id="TzVXNC2sTXzUrQoLoyxp" name="Page-1">
+    <mxGraphModel dx="1662" dy="705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="veLbHdScehncD9XIqofB-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="veLbHdScehncD9XIqofB-2" target="veLbHdScehncD9XIqofB-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="veLbHdScehncD9XIqofB-2" value="start" style="shape=mxgraph.flowchart.terminator;strokeWidth=2;gradientColor=none;gradientDirection=north;fontStyle=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="50" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="veLbHdScehncD9XIqofB-3" value="228번 서버&amp;nbsp;&lt;br&gt;L4 제외" style="shape=mxgraph.flowchart.data;strokeWidth=2;gradientColor=none;gradientDirection=north;fontStyle=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="242" y="100" width="159" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="veLbHdScehncD9XIqofB-4" style="fontStyle=1;strokeColor=#003366;strokeWidth=1;html=1;" edge="1" parent="1" source="veLbHdScehncD9XIqofB-2" target="veLbHdScehncD9XIqofB-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="veLbHdScehncD9XIqofB-5" value="228번 서버&lt;br&gt;WEB-INF 배포" style="shape=mxgraph.flowchart.data;strokeWidth=2;gradientColor=none;gradientDirection=north;fontStyle=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="242" y="200" width="159" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="veLbHdScehncD9XIqofB-6" value="228번 서버&lt;br&gt;트래픽 제어 &lt;br&gt;스케줄 ON" style="shape=mxgraph.flowchart.data;strokeWidth=2;gradientColor=none;gradientDirection=north;fontStyle=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240.5" y="400" width="159" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="veLbHdScehncD9XIqofB-7" value="" style="fontStyle=1;strokeColor=#003366;strokeWidth=1;html=1;startArrow=none;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;" edge="1" parent="1" source="veLbHdScehncD9XIqofB-11" target="veLbHdScehncD9XIqofB-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="320" as="sourcePoint" />
+            <mxPoint x="320" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="veLbHdScehncD9XIqofB-8" style="fontStyle=1;strokeColor=#003366;strokeWidth=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="veLbHdScehncD9XIqofB-3" target="veLbHdScehncD9XIqofB-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330.29999999999995" y="90" as="sourcePoint" />
+            <mxPoint x="330.70000000000005" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="veLbHdScehncD9XIqofB-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="veLbHdScehncD9XIqofB-11" target="veLbHdScehncD9XIqofB-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="veLbHdScehncD9XIqofB-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="veLbHdScehncD9XIqofB-11" target="veLbHdScehncD9XIqofB-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="veLbHdScehncD9XIqofB-11" value="228번 서버&lt;br&gt;Tomcat Restart" style="shape=mxgraph.flowchart.data;strokeWidth=2;gradientColor=none;gradientDirection=north;fontStyle=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240.5" y="300" width="159" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="veLbHdScehncD9XIqofB-12" style="fontStyle=1;strokeColor=#003366;strokeWidth=1;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="veLbHdScehncD9XIqofB-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="280" as="sourcePoint" />
+            <mxPoint x="331.5" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="veLbHdScehncD9XIqofB-13" value="228번 서버&lt;br&gt;L4 연동" style="shape=mxgraph.flowchart.data;strokeWidth=2;gradientColor=none;gradientDirection=north;fontStyle=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240.5" y="500" width="159" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="veLbHdScehncD9XIqofB-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="veLbHdScehncD9XIqofB-6" target="veLbHdScehncD9XIqofB-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="390" as="sourcePoint" />
+            <mxPoint x="330" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="veLbHdScehncD9XIqofB-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="veLbHdScehncD9XIqofB-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="489.9999999999999" as="sourcePoint" />
+            <mxPoint x="320.5" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="veLbHdScehncD9XIqofB-28" value="나머지 서버도&amp;nbsp;&lt;br&gt;앞선 과정 반복" style="shape=mxgraph.flowchart.data;strokeWidth=2;gradientColor=none;gradientDirection=north;fontStyle=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240.5" y="600" width="159" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="veLbHdScehncD9XIqofB-30" value="end" style="shape=mxgraph.flowchart.terminator;strokeWidth=2;gradientColor=none;gradientDirection=north;fontStyle=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="263.5" y="710" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="veLbHdScehncD9XIqofB-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.472;entryY=0.026;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="veLbHdScehncD9XIqofB-28" target="veLbHdScehncD9XIqofB-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="338.5000000000002" y="577.0000000000002" as="sourcePoint" />
+            <mxPoint x="338.5" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
