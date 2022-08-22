@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-22T10:43:18.977Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="HHrNNTJsZ0ggAoB9Goym" version="20.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-22T10:44:03.105Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="MqgLG08EAf1tqqKpr9dL" version="20.1.1" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="1330" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2216" dy="1016" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -178,8 +178,8 @@
         <mxCell id="W_5MUlFWXfUlgrD-ECE_-13" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;광고주 비즈보드 소재 그룹 존재시 해당 그룹에 속한 소재 전체 삭제&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;API로 넘어온 소재 전체 등록&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;이미지 검수 테이블 등록&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="1061" y="832" width="220" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="W_5MUlFWXfUlgrD-ECE_-14" value="&lt;h1&gt;정책서&amp;nbsp;&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;카카오 이벤트 라이브(ON) 여부는 광고주의 요청에 따라 시시각각 변하기 때문에 광고주 파트에서&amp;nbsp;&lt;br&gt;일자별 배치를 만들어, 카카오 이벤트 라이브(ON) 광고주 리스트를 조회하여 배치 히스토리 테이블에&lt;br&gt;광고주별 최종 배치 실행일 및 종료 코드(성공 or 실패) 를 조회하여 한달 내에 배치 성공 히스토리가&lt;br&gt;없는 경우 이미지 생성 요청을 한다.&lt;/li&gt;&lt;li&gt;비즈보드 서비스용 이미지의 경우, 카카오 소속 어드민이 모비센스 이미지 검수 페이지에 들어와&amp;nbsp;&lt;br&gt;직접 승인/반려 처리를 하기 때문에 광고주별 전환탑 상품 5개를 한달 주기로 전체를 교체한다.&amp;nbsp;&lt;br&gt;&amp;nbsp; - 생성된 이미지 5개의 이미지 이름을 동일하게 유지하여 이슈 최소화&amp;nbsp;&lt;br&gt;&amp;nbsp; - 전환탑 상품의 랭킹 변경에 따른 생성된 이미지 및 소재 그룹의 히스토리 관리 이슈 최소화&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="86" y="1630" width="1604" height="210" as="geometry" />
+        <mxCell id="W_5MUlFWXfUlgrD-ECE_-14" value="&lt;h1&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;정책서&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;카카오 이벤트 라이브(ON) 여부는 광고주의 요청에 따라 시시각각 변하기 때문에 광고주 파트에서&amp;nbsp;&lt;br&gt;일자별 배치를 만들어, 카카오 이벤트 라이브(ON) 광고주 리스트를 조회하여 배치 히스토리 테이블에&lt;br&gt;광고주별 최종 배치 실행일 및 종료 코드(성공 or 실패) 를 조회하여 한달 내에 배치 성공 히스토리가&lt;br&gt;없는 경우 이미지 생성 요청을 한다.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;비즈보드 서비스용 이미지의 경우, 카카오 소속 어드민이 모비센스 이미지 검수 페이지에 들어와&amp;nbsp;&lt;br&gt;직접 승인/반려 처리를 하기 때문에 광고주별 전환탑 상품 5개를 한달 주기로 전체를 교체한다.&amp;nbsp;&lt;br&gt;&amp;nbsp; - 생성된 이미지 5개의 이미지 이름을 동일하게 유지하여 이슈 최소화&amp;nbsp;&lt;br&gt;&amp;nbsp; - 전환탑 상품의 랭킹 변경에 따른 생성된 이미지 및 소재 그룹의 히스토리 관리 이슈 최소화&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="86" y="1610" width="1604" height="400" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
