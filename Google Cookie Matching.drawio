@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-06T06:52:02.922Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="AZbKyv27vilfR1jJillT" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-06T06:53:37.130Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="CIwDkx34l_z_56zdlL9H" version="20.2.7" type="github">
   <diagram id="2nHI54om172a_KPNyVsi" name="페이지-1">
     <mxGraphModel dx="1385" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -57,6 +57,9 @@
         </mxCell>
         <mxCell id="DsmTkCZuP_f7NbJFpk3H-20" value="4. Client redierct to&amp;nbsp;&lt;br&gt;cm.g.doubleclick.net/pixel?google_nid=enliple_tw&amp;amp;google_hm={buyer cookie}&lt;br&gt;( using Base64 encoding )" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="414" y="347" width="436" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DsmTkCZuP_f7NbJFpk3H-22" value="Audience" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="108.75" y="320" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
