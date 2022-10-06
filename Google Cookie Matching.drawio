@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-06T06:41:26.816Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="0V972B5qb9zPv7pUrg-X" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-06T06:44:39.776Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="gsZHxQj6r4jsGOzJmmbU" version="20.2.7" type="github">
   <diagram id="2nHI54om172a_KPNyVsi" name="페이지-1">
     <mxGraphModel dx="1385" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -22,7 +22,7 @@
         <mxCell id="DsmTkCZuP_f7NbJFpk3H-7" value="Advertiser Data Collect Service" style="swimlane;" vertex="1" parent="1">
           <mxGeometry x="590" y="140" width="235" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="DsmTkCZuP_f7NbJFpk3H-8" value="2. load tracking data into third-party&lt;br&gt;cookies and Mongo DB." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="DsmTkCZuP_f7NbJFpk3H-7">
+        <mxCell id="DsmTkCZuP_f7NbJFpk3H-8" value="2. Store tracking data in &lt;br&gt;third party cookies and Mongo DB." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="DsmTkCZuP_f7NbJFpk3H-7">
           <mxGeometry x="12.5" y="25" width="210" height="40" as="geometry" />
         </mxCell>
         <mxCell id="DsmTkCZuP_f7NbJFpk3H-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="DsmTkCZuP_f7NbJFpk3H-2" target="DsmTkCZuP_f7NbJFpk3H-7">
