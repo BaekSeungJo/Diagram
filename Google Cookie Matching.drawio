@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-06T06:40:43.987Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="gyglfn-2MsqtUljT-Phy" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-06T06:41:26.816Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="0V972B5qb9zPv7pUrg-X" version="20.2.7" type="github">
   <diagram id="2nHI54om172a_KPNyVsi" name="페이지-1">
     <mxGraphModel dx="1385" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -8,10 +8,10 @@
           <mxGeometry x="60" y="210" width="157.5" height="110" as="geometry" />
         </mxCell>
         <mxCell id="DsmTkCZuP_f7NbJFpk3H-2" value="Advertiser Web Site" style="swimlane;" vertex="1" parent="1">
-          <mxGeometry x="295" y="230" width="252.5" height="70" as="geometry" />
+          <mxGeometry x="295" y="230" width="275" height="70" as="geometry" />
         </mxCell>
         <mxCell id="DsmTkCZuP_f7NbJFpk3H-3" value="1. web page has script for audience matching." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="DsmTkCZuP_f7NbJFpk3H-2">
-          <mxGeometry x="-17.5" y="30" width="270" height="30" as="geometry" />
+          <mxGeometry y="28" width="270" height="30" as="geometry" />
         </mxCell>
         <mxCell id="DsmTkCZuP_f7NbJFpk3H-4" value="Visit" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DsmTkCZuP_f7NbJFpk3H-1" target="DsmTkCZuP_f7NbJFpk3H-2">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -53,7 +53,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="DsmTkCZuP_f7NbJFpk3H-18" value="&lt;b&gt;Google Cookie Matching Service&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="295" y="380" width="235" height="60" as="geometry" />
+          <mxGeometry x="315" y="380" width="235" height="60" as="geometry" />
         </mxCell>
         <mxCell id="DsmTkCZuP_f7NbJFpk3H-20" value="4. Redierct to&amp;nbsp;&lt;br&gt;cm.g.doubleclick.net/pixel?google_nid=enliple_tw&amp;amp;google_hm={buyer cookie}&lt;br&gt;( using Base64 encoding )" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="414" y="347" width="436" height="30" as="geometry" />
