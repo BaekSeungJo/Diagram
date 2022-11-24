@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-23T09:41:13.992Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="F8sotIGGQDj6JGDEwGYz" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-24T08:20:45.106Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="ps-rAZAqIxDHL2yr3TGP" version="20.4.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1662" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,8 +7,8 @@
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="카카오 직원이&amp;nbsp;&lt;br&gt;승인 버튼 클릭" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="160" y="80" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="8r-Owe_XGoAO7W85Ogez-0" value="승인된 최신 그룹 아이디 조회&lt;br&gt;&lt;br&gt;select APPROVE_AD_GRP_ID&lt;br&gt;from dreamsearch.BIZ_JOB_NOTI&amp;nbsp;&lt;br&gt;where AD_GRP_ID = #{GRP_ID}" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="125" y="148" width="190" height="100" as="geometry" />
+        <mxCell id="8r-Owe_XGoAO7W85Ogez-0" value="해당 광고주의 승인된 &lt;br&gt;최근 그룹 아이디 조회&lt;br&gt;&lt;br&gt;select APPROVE_AD_GRP_ID&lt;br&gt;from dreamsearch.BIZ_JOB_NOTI&amp;nbsp;&lt;br&gt;where AD_GRP_ID = #{GRP_ID}" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="125" y="148" width="190" height="112" as="geometry" />
         </mxCell>
         <mxCell id="8r-Owe_XGoAO7W85Ogez-1" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="8r-Owe_XGoAO7W85Ogez-0">
           <mxGeometry x="0.3333" y="20" relative="1" as="geometry">
@@ -25,9 +25,12 @@
             <mxPoint as="offset" />
             <mxPoint x="230" y="130" as="sourcePoint" />
             <mxPoint x="230" y="154" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="230" y="260" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="8r-Owe_XGoAO7W85Ogez-5" value="해당 그룹 아이디로 이벤트 소재 그룹 맵핑 테이블 조회&lt;br&gt;&lt;br&gt;select *&lt;br&gt;from dreamsearch.MOBON_AD_GRP_EVENT_MPG&lt;br&gt;where MOBON_AD_GRP_ID = #{APPROVE_AD_GRP_ID}" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8r-Owe_XGoAO7W85Ogez-5" value="승인된 최근 그룹 아이디로 이벤트 소재 그룹 맵핑 테이블 조회&lt;br&gt;&lt;br&gt;select *&lt;br&gt;from dreamsearch.MOBON_AD_GRP_EVENT_MPG&lt;br&gt;where MOBON_AD_GRP_ID = #{APPROVE_AD_GRP_ID}" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="36.25" y="410" width="387.5" height="120" as="geometry" />
         </mxCell>
         <mxCell id="8r-Owe_XGoAO7W85Ogez-6" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8r-Owe_XGoAO7W85Ogez-3" target="8r-Owe_XGoAO7W85Ogez-5">
@@ -48,16 +51,85 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8r-Owe_XGoAO7W85Ogez-9" value="승인된 최신 그룹 아이디로 업데이트&lt;br&gt;&lt;br&gt;update dreamsearch.MOBON_AD_GRP_EVENT_MPG&lt;br&gt;SET MOBON_AD_GRP_ID = #{AD_GRP_ID}&lt;br&gt;WHERE MOBON_AD_GRP_ID = #{APPROVE_AD_GRP_ID}" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="41" y="694" width="390" height="92" as="geometry" />
+          <mxGeometry x="40" y="740" width="390" height="92" as="geometry" />
         </mxCell>
         <mxCell id="8r-Owe_XGoAO7W85Ogez-10" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="8r-Owe_XGoAO7W85Ogez-9">
-          <mxGeometry y="10" relative="1" as="geometry">
+          <mxGeometry x="-0.7317" y="14" relative="1" as="geometry">
             <mxPoint as="offset" />
             <mxPoint x="235" y="660" as="sourcePoint" />
             <mxPoint x="245" y="568" as="targetPoint" />
             <Array as="points">
               <mxPoint x="236" y="660" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8r-Owe_XGoAO7W85Ogez-11" value="APPROVE_AD_GRP_ID 컬럼은 DEFAULT 가 0이기 때문." style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="329" y="240" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8r-Owe_XGoAO7W85Ogez-12" value="APPROVE_AD_GRP_ID 가 0인 경우 광고주 아이디로 이벤트 소재&lt;br&gt;맵핑 테이블에 승인된 비즈보드 이미지 소재가 존재하는지 확인&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;div&gt;SELECT MOBON_AD_GRP_ID&lt;/div&gt;&lt;div&gt;FROM dreamsearch.`MOBON_AD_GRP_EVENT_MPG`&lt;/div&gt;&lt;div&gt;WHERE MOBON_AD_GRP_ID IN (&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;SELECT MOBON_AD_GRP_ID&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;FROM dreamsearch.`MOBON_AD_GRP_BIZ_STATE`&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;WHERE BIZ_STATE_CODE = &#39;02&#39;&lt;/div&gt;&lt;div&gt;) AND ADVER_ID = {ADVER_ID}&lt;/div&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Yes%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BfontSize%3D11%3BendArrow%3Dblock%3BendFill%3D0%3BendSize%3D8%3BstrokeWidth%3D1%3Bshadow%3D0%3BlabelBackgroundColor%3Dnone%3BexitX%3D0.5%3BexitY%3D1%3BexitDx%3D0%3BexitDy%3D0%3BentryX%3D0.5%3BentryY%3D0%3BentryDx%3D0%3BentryDy%3D0%3B%22%20edge%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20y%3D%2210%22%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20as%3D%22offset%22%2F%3E%3CmxPoint%20x%3D%22230%22%20y%3D%22374%22%20as%3D%22sourcePoint%22%2F%3E%3CmxPoint%20x%3D%22230%22%20y%3D%22410%22%20as%3D%22targetPoint%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="540" y="233.5" width="387.5" height="186.5" as="geometry" />
+        </mxCell>
+        <mxCell id="8r-Owe_XGoAO7W85Ogez-13" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8r-Owe_XGoAO7W85Ogez-3" target="8r-Owe_XGoAO7W85Ogez-12">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="240" y="384" as="sourcePoint" />
+            <mxPoint x="240" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8r-Owe_XGoAO7W85Ogez-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;exitX=0.505;exitY=0.998;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8r-Owe_XGoAO7W85Ogez-12" target="8r-Owe_XGoAO7W85Ogez-9">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="730" y="470" as="sourcePoint" />
+            <mxPoint x="735" y="504" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="736" y="700" />
+              <mxPoint x="236" y="700" />
+              <mxPoint x="236" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8r-Owe_XGoAO7W85Ogez-16" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8r-Owe_XGoAO7W85Ogez-7" target="8r-Owe_XGoAO7W85Ogez-12">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="340" y="337.0000000000001" as="sourcePoint" />
+            <mxPoint x="540" y="330" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="480" y="611" />
+              <mxPoint x="480" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8r-Owe_XGoAO7W85Ogez-17" value="화면에 표시된 해당 광고주 아이디로 승인된 최신 그룹 아이디 &lt;br&gt;관리 테이블 업데이트&lt;br&gt;&lt;br&gt;&lt;div&gt;UPDATE dreamsearch.`BIZ_JOB_NOTI`&lt;/div&gt;&lt;div&gt;SET&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;APPROVE_AD_GRP_ID = {AD_GRP_ID}&lt;/div&gt;&lt;div&gt;WHERE&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;ADVER_ID = ${ADVER_ID}&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="40.25" y="870" width="390" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="8r-Owe_XGoAO7W85Ogez-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8r-Owe_XGoAO7W85Ogez-9" target="8r-Owe_XGoAO7W85Ogez-17">
+          <mxGeometry x="-0.7317" y="14" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="234.5" y="1030" as="sourcePoint" />
+            <mxPoint x="234.5" y="1110" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8r-Owe_XGoAO7W85Ogez-19" value="기존에 승인 버튼 클릭시 처리하던 FLOW 처리" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="33.75" y="1039" width="390" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="8r-Owe_XGoAO7W85Ogez-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8r-Owe_XGoAO7W85Ogez-17" target="8r-Owe_XGoAO7W85Ogez-19">
+          <mxGeometry x="-0.7317" y="14" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="245" y="842" as="sourcePoint" />
+            <mxPoint x="245.29999999999995" y="880" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8r-Owe_XGoAO7W85Ogez-22" value="END" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="170" y="1120" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8r-Owe_XGoAO7W85Ogez-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8r-Owe_XGoAO7W85Ogez-19" target="8r-Owe_XGoAO7W85Ogez-22">
+          <mxGeometry x="-0.7317" y="14" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="245.25" y="1010" as="sourcePoint" />
+            <mxPoint x="238.75" y="1049" as="targetPoint" />
+            <Array as="points" />
           </mxGeometry>
         </mxCell>
       </root>
