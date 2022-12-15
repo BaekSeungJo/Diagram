@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-12-15T06:21:27.980Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="fsZvyS9zHGQkzEYWI3Ku" version="20.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-15T07:46:07.315Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="0rU2hsE6d9ysIJe5pK24" version="20.6.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1385" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1146" dy="608" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -41,7 +41,7 @@
           <mxGeometry x="176.5" y="425" width="197.5" height="150" as="geometry" />
         </mxCell>
         <mxCell id="Dg-iGA9xPcULfQSp999H-3" value="Frequency 처리" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="215" y="608" width="120" height="40" as="geometry" />
+          <mxGeometry x="214.75" y="820" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Dg-iGA9xPcULfQSp999H-4" value="Yes" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Dg-iGA9xPcULfQSp999H-2" target="Dg-iGA9xPcULfQSp999H-3">
           <mxGeometry x="0.3333" y="20" relative="1" as="geometry">
@@ -68,23 +68,23 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Dg-iGA9xPcULfQSp999H-8" value="Mongo에 변경사항 저장&lt;br&gt;( Inclination.save )" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="200.25" y="682" width="154.75" height="40" as="geometry" />
+          <mxGeometry x="200" y="894" width="154.75" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Dg-iGA9xPcULfQSp999H-9" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Dg-iGA9xPcULfQSp999H-3" target="Dg-iGA9xPcULfQSp999H-8">
           <mxGeometry x="0.3333" y="20" relative="1" as="geometry">
             <mxPoint as="offset" />
-            <mxPoint x="285.25" y="584" as="sourcePoint" />
-            <mxPoint x="285" y="618" as="targetPoint" />
+            <mxPoint x="285" y="796" as="sourcePoint" />
+            <mxPoint x="284.75" y="830" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Dg-iGA9xPcULfQSp999H-10" value="END" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="218" y="760" width="120" height="40" as="geometry" />
+          <mxGeometry x="217.75" y="972" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Dg-iGA9xPcULfQSp999H-12" value="Yes" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Dg-iGA9xPcULfQSp999H-8" target="Dg-iGA9xPcULfQSp999H-10">
           <mxGeometry x="0.3333" y="20" relative="1" as="geometry">
             <mxPoint as="offset" />
-            <mxPoint x="277.75" y="730" as="sourcePoint" />
-            <mxPoint x="277.5" y="764" as="targetPoint" />
+            <mxPoint x="277.5" y="942" as="sourcePoint" />
+            <mxPoint x="277.25" y="976" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Dg-iGA9xPcULfQSp999H-13" value="&lt;i&gt;&lt;font color=&quot;#ff3333&quot;&gt;크롬 80 에 따른 au_id or s_au_id&lt;br&gt;조회 하도록 변경&lt;/font&gt;&lt;/i&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
@@ -92,6 +92,44 @@
         </mxCell>
         <mxCell id="Dg-iGA9xPcULfQSp999H-16" value="&lt;font color=&quot;#ff3333&quot;&gt;&lt;i&gt;Cookie AUID 와 CookieMatching AUID 가 다른 경우 개선 방안 필요&lt;/i&gt;&lt;/font&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1.25" y="277" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Dg-iGA9xPcULfQSp999H-17" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;exitX=1.001;exitY=0.49;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Dg-iGA9xPcULfQSp999H-2" target="Dg-iGA9xPcULfQSp999H-18">
+          <mxGeometry x="-0.0616" y="8" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="382" y="499.88" as="sourcePoint" />
+            <mxPoint x="440" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dg-iGA9xPcULfQSp999H-18" value="쿠키매칭 AUID로&lt;br&gt;Mongo 모수 조회&lt;br&gt;( Inclination.load )" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="450" y="471.5" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Dg-iGA9xPcULfQSp999H-20" value="카카오 송출 중인 타겟팅&lt;br&gt;모수 존재 확인&lt;br&gt;( 모수 존재 일치 여부 확인 안함 )" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="411.25" y="560" width="197.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Dg-iGA9xPcULfQSp999H-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;exitX=0.506;exitY=1.038;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Dg-iGA9xPcULfQSp999H-18" target="Dg-iGA9xPcULfQSp999H-20">
+          <mxGeometry x="-0.0616" y="8" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="384.1975" y="508.4999999999999" as="sourcePoint" />
+            <mxPoint x="460" y="509" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dg-iGA9xPcULfQSp999H-22" value="Yes" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=-0.021;exitY=0.498;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Dg-iGA9xPcULfQSp999H-20" target="Dg-iGA9xPcULfQSp999H-3">
+          <mxGeometry x="-0.8294" y="-15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="285.25" y="585" as="sourcePoint" />
+            <mxPoint x="284.7499999999998" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dg-iGA9xPcULfQSp999H-23" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Dg-iGA9xPcULfQSp999H-20" target="Dg-iGA9xPcULfQSp999H-8">
+          <mxGeometry x="-0.952" y="-20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="384.1975000000002" y="508.5" as="sourcePoint" />
+            <mxPoint x="460" y="509" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="510" y="880" />
+              <mxPoint x="277" y="880" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
