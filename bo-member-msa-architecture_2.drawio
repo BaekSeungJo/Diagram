@@ -115,10 +115,10 @@
         <mxCell id="fo-member-api" parent="external-group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;fontStyle=1;" value="fo-member-api" vertex="1">
           <mxGeometry height="40" width="100" x="60" y="25" as="geometry" />
         </mxCell>
-        <mxCell id="bo-admin" parent="external-group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;fontStyle=1;" value="bo-admin (Unified Admin)" vertex="1">
+        <mxCell id="bo-admin" parent="external-group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;fontStyle=1;" value="bo-admin &lt;br&gt;(Unified Admin)" vertex="1">
           <mxGeometry height="40" width="100" x="180" y="25" as="geometry" />
         </mxCell>
-        <mxCell id="ecp" parent="external-group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;fontStyle=1;" value="ECP (Notification)" vertex="1">
+        <mxCell id="ecp" parent="external-group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;fontStyle=1;" value="ECP &lt;br&gt;(Notification)" vertex="1">
           <mxGeometry height="40" width="100" x="300" y="25" as="geometry" />
         </mxCell>
         <mxCell id="arrow-admin-gw" edge="1" parent="1" source="admin-browser" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;" target="ingress">
