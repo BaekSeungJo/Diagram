@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-12-30T00:00:00.000Z" agent="Claude AI" etag="bo-member-msa" version="21.0.0" type="device">
+  <diagram id="bo-member-msa-diagram" name="관리자도구 회원 서비스 MSA 구성도">
+    <mxGraphModel dx="1434" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="관리자도구(Back-Office) 회원 서비스 MSA 시스템 구성도" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1;fontColor=#1a1a1a;" vertex="1" parent="1">
+          <mxGeometry x="350" y="20" width="700" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Admin User Layer -->
+        <mxCell id="admin-group" value="관리자 (Admin User)" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="1320" height="90" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="admin-user" value="Back-Office&#xa;관리자" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="admin-group">
+          <mxGeometry x="120" y="15" width="40" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="admin-browser" value="관리자 브라우저&#xa;(Internal Network)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;" vertex="1" parent="admin-group">
+          <mxGeometry x="240" y="20" width="140" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Gateway Layer -->
+        <mxCell id="gateway-group" value="API Gateway" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="1320" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ingress" value="K8s Ingress Controller" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" vertex="1" parent="gateway-group">
+          <mxGeometry x="520" y="20" width="280" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- MSA Services Layer -->
+        <mxCell id="msa-group" value="MSA Services Layer (Spring Boot)" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="290" width="1320" height="340" as="geometry" />
+        </mxCell>
+        
+        <!-- bo-member-admin-ui Service -->
+        <mxCell id="ui-service" value="" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;startSize=30;" vertex="1" parent="msa-group">
+          <mxGeometry x="40" y="30" width="400" height="290" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ui-title" value="bo-member-admin-ui" style="text;html=1;strokeColor=none;fillColor=#2196f3;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="ui-service">
+          <mxGeometry x="10" y="10" width="380" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ui-desc" value="관리자 화면 서비스 (Thymeleaf SSR)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="ui-service">
+          <mxGeometry x="10" y="45" width="380" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ui-adapter" value="Adapter In (Controllers)&#xa;━━━━━━━━━━━━━━━━━━━━━&#xa;• ApiCallController (API 프록시)&#xa;• CodeController, CommonController&#xa;• MbrFileController, PopupController&#xa;• RestMmbrDetailController" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;align=left;spacingLeft=10;" vertex="1" parent="ui-service">
+          <mxGeometry x="15" y="70" width="370" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ui-biz" value="Business Layer&#xa;━━━━━━━━━━━━━━━━━━━━━&#xa;• ApiCallService (bo-member-admin-api 호출)&#xa;• Excel Import/Export Services&#xa;• S3 File Upload Services" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;align=left;spacingLeft=10;" vertex="1" parent="ui-service">
+          <mxGeometry x="15" y="160" width="370" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ui-views" value="Views (Thymeleaf Templates)&#xa;━━━━━━━━━━━━━━━━━━━━━&#xa;회원계정 | 회원카드 | 인증관리 | 등급관리 | 휴면/탈퇴 | 설정" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=10;" vertex="1" parent="ui-service">
+          <mxGeometry x="15" y="230" width="370" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- bo-member-admin-api Service -->
+        <mxCell id="api-service" value="" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;startSize=30;" vertex="1" parent="msa-group">
+          <mxGeometry x="480" y="30" width="440" height="290" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="api-title" value="bo-member-admin-api" style="text;html=1;strokeColor=none;fillColor=#4caf50;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="api-service">
+          <mxGeometry x="10" y="10" width="420" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="api-desc" value="관리자 회원 비즈니스 로직 API 서비스" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="api-service">
+          <mxGeometry x="10" y="45" width="420" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="api-adapter" value="Adapter In (REST Controllers)&#xa;━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&#xa;• RestMmbrDetailController, RestMmbrInfmModify&#xa;• RestMmbrCardController, RestMmbrLgnHistoryController&#xa;• RestSelfCertController, RestAdultCertController, RestForeignCertController&#xa;• RestMmbrGrdController, RestExclMmbrController, RestFamilyMmbrController&#xa;• RestDormMmbrInfmController, RestWdrlMmbrController" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;align=left;spacingLeft=10;" vertex="1" parent="api-service">
+          <mxGeometry x="15" y="70" width="410" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="api-biz" value="Business Layer (Services + Ports)&#xa;━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&#xa;• MmbrDetailService, MmbrInfmModifyService, MmbrCardService&#xa;• SelfCertService, AdultCertService, ForeignCertService&#xa;• GrdHistoryService, ExclMmbrInfoService, FamlMmbrService&#xa;• DormMmbrInfmService, WdrlMmbrService, KisaWdrlMmbrInfoService" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;align=left;spacingLeft=10;" vertex="1" parent="api-service">
+          <mxGeometry x="15" y="180" width="410" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Service Communication Arrow -->
+        <mxCell id="arrow-ui-api" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;dashed=1;" edge="1" parent="msa-group" source="ui-service" target="api-service">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Functional Areas Box -->
+        <mxCell id="func-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;" vertex="1" parent="msa-group">
+          <mxGeometry x="960" y="30" width="340" height="290" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="func-title" value="주요 관리 기능" style="text;html=1;strokeColor=none;fillColor=#9c27b0;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="msa-group">
+          <mxGeometry x="970" y="40" width="320" height="25" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="func-mmbracnt" value="📋 회원계정 관리&#xa;회원상세, ID변경, 로그인이력, 수정이력&#xa;비정상회원, KISA탈퇴, 가족회원" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1976d2;fontSize=9;align=left;spacingLeft=8;" vertex="1" parent="msa-group">
+          <mxGeometry x="970" y="70" width="155" height="55" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="func-mmbrcard" value="💳 회원카드 관리&#xa;북클럽카드 등록/조회&#xa;미등록카드 관리" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#388e3c;fontSize=9;align=left;spacingLeft=8;" vertex="1" parent="msa-group">
+          <mxGeometry x="1135" y="70" width="155" height="55" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="func-mmbrcert" value="🔐 인증 관리&#xa;본인인증, 성인인증, 외국인인증&#xa;SNS연동이력, 인증오류 관리" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#f57c00;fontSize=9;align=left;spacingLeft=8;" vertex="1" parent="msa-group">
+          <mxGeometry x="970" y="135" width="155" height="55" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="func-mmbrgrade" value="⭐ 등급 관리&#xa;등급이력, 등급쿠폰, 예외회원&#xa;멤버십제휴 (카카오,KB,롯데카드)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#c2185b;fontSize=9;align=left;spacingLeft=8;" vertex="1" parent="msa-group">
+          <mxGeometry x="1135" y="135" width="155" height="55" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="func-mmbrwdrl" value="😴 휴면/탈퇴 관리&#xa;휴면회원 조회/상세/복원사유&#xa;탈퇴회원 관리" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#7b1fa2;fontSize=9;align=left;spacingLeft=8;" vertex="1" parent="msa-group">
+          <mxGeometry x="970" y="200" width="155" height="55" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="func-mmbrcfg" value="⚙️ 설정/정책 관리&#xa;마케팅수신설정, 약관관리&#xa;회원정책 관리" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eceff1;strokeColor=#546e7a;fontSize=9;align=left;spacingLeft=8;" vertex="1" parent="msa-group">
+          <mxGeometry x="1135" y="200" width="155" height="55" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="func-cmdlmm" value="🔄 계정통합 관리&#xa;계정이력조회, 계정통합 처리" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0f7fa;strokeColor=#00838f;fontSize=9;align=left;spacingLeft=8;" vertex="1" parent="msa-group">
+          <mxGeometry x="970" y="265" width="320" height="45" as="geometry" />
+        </mxCell>
+        
+        <!-- Data Layer -->
+        <mxCell id="data-group" value="Data Layer" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="650" width="1320" height="130" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="oracle-mbr" value="Oracle DB&#xa;(MBR Reader)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;" vertex="1" parent="data-group">
+          <mxGeometry x="120" y="25" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="oracle-ebch" value="Oracle DB&#xa;(EBCH 휴면)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;" vertex="1" parent="data-group">
+          <mxGeometry x="260" y="25" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="oracle-nec1" value="Oracle DB&#xa;(NEC1 멤버십)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;" vertex="1" parent="data-group">
+          <mxGeometry x="400" y="25" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="oracle-nsc" value="Oracle DB&#xa;(NSC 등급)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;" vertex="1" parent="data-group">
+          <mxGeometry x="540" y="25" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="redis" value="Redis&#xa;(Session/Auth)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;" vertex="1" parent="data-group">
+          <mxGeometry x="680" y="25" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="s3" value="AWS S3&#xa;(File Storage)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;fontStyle=1;" vertex="1" parent="data-group">
+          <mxGeometry x="820" y="25" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- External Systems -->
+        <mxCell id="external-group" value="External Systems / 연동" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="800" width="1320" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="fo-member-api" value="fo-member-api&#xa;(대고객 회원 API)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;" vertex="1" parent="external-group">
+          <mxGeometry x="80" y="25" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="bo-admin" value="bo-admin&#xa;(통합 관리자)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;" vertex="1" parent="external-group">
+          <mxGeometry x="220" y="25" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ecp" value="ECP&#xa;(알림톡/SMS)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;" vertex="1" parent="external-group">
+          <mxGeometry x="360" y="25" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="kisa" value="KISA&#xa;(개인정보 파기)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;" vertex="1" parent="external-group">
+          <mxGeometry x="500" y="25" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rtree" value="RTree&#xa;(탈퇴회원)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;" vertex="1" parent="external-group">
+          <mxGeometry x="640" y="25" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="membership" value="멤버십 제휴&#xa;(카카오/KB/롯데)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;fontStyle=1;" vertex="1" parent="external-group">
+          <mxGeometry x="780" y="25" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="hottracks" value="핫트랙스&#xa;(주문 조회)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;" vertex="1" parent="external-group">
+          <mxGeometry x="920" y="25" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="80" width="280" height="90" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-title" value="범례 (Legend)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="82" width="280" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-adapter" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="107" width="15" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-adapter-text" value="Adapter (Controller)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="103" width="100" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-service" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="107" width="15" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-service-text" value="Service Layer" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="103" width="80" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-view" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="127" width="15" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-view-text" value="View Layer" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="123" width="100" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-db" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=5;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="123" width="15" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-db-text" value="Database" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="123" width="80" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-ext" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="147" width="15" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-ext-text" value="External System" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="143" width="100" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Architecture Note -->
+        <mxCell id="note-box" value="아키텍처 특징&#xa;━━━━━━━━━━━━━━━━━━━&#xa;• Hexagonal Architecture (Port &amp; Adapter)&#xa;• 다중 DataSource (MBR/EBCH/NEC1/NSC)&#xa;• Redis 기반 Session 인증&#xa;• S3 파일 업로드 (엑셀, 정책파일)&#xa;• Spring Security + Redis Auth Filter" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=10;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="520" width="280" height="110" as="geometry" />
+        </mxCell>
+        
+        <!-- Connection Arrows -->
+        <mxCell id="arrow-admin-gw" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1" source="admin-browser" target="ingress">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow-gw-ui" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1" source="ingress" target="ui-service">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow-gw-api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1" source="ingress" target="api-service">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow-api-db" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=1;dashed=1;" edge="1" parent="1" source="api-service" target="oracle-mbr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
