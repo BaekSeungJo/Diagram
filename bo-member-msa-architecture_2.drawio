@@ -1,0 +1,195 @@
+<mxfile host="app.diagrams.net" modified="2024-12-30T00:00:00.000Z" agent="Claude" version="21.0.0" type="device">
+  <diagram id="bo-member-msa" name="BO Member MSA">
+    <mxGraphModel dx="1434" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <mxCell id="title" value="Back-Office Member Service MSA Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1a1a1a;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="admin-group" value="Admin User Layer" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="1320" height="90" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="admin-user" value="BO Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="admin-group">
+          <mxGeometry x="120" y="15" width="40" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="admin-browser" value="Admin Browser (Internal Network)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;" vertex="1" parent="admin-group">
+          <mxGeometry x="240" y="20" width="180" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="gateway-group" value="API Gateway" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="1320" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ingress" value="K8s Ingress Controller" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" vertex="1" parent="gateway-group">
+          <mxGeometry x="520" y="20" width="280" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="msa-group" value="MSA Services Layer (Spring Boot)" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="290" width="1320" height="340" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ui-service" value="bo-member-admin-ui" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1;" vertex="1" parent="msa-group">
+          <mxGeometry x="40" y="30" width="400" height="290" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ui-desc" value="Admin UI Service (Thymeleaf SSR)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="ui-service">
+          <mxGeometry x="10" y="30" width="380" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ui-adapter" value="Adapter In (Controllers): ApiCallController, CodeController, CommonController, MbrFileController, PopupController" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;align=left;spacingLeft=10;" vertex="1" parent="ui-service">
+          <mxGeometry x="15" y="55" width="370" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ui-biz" value="Business Layer: ApiCallService, Excel Import/Export, S3 File Upload Services" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;align=left;spacingLeft=10;" vertex="1" parent="ui-service">
+          <mxGeometry x="15" y="115" width="370" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ui-views" value="Views (Thymeleaf): mmbracnt, mmbrcard, mmbrcert, mmbrgrade, mmbrwdrl, mmbrcfg, cmdlmm" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;align=left;spacingLeft=10;" vertex="1" parent="ui-service">
+          <mxGeometry x="15" y="165" width="370" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ui-security" value="Security: MbrAuthFilter, LoginAuthenticationProvider, WebSecurityConfig" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;align=left;spacingLeft=10;" vertex="1" parent="ui-service">
+          <mxGeometry x="15" y="215" width="370" height="35" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ui-lib" value="Library: WindExcelImport (Excel), DRM, S3 FileResource" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=9;align=left;spacingLeft=10;" vertex="1" parent="ui-service">
+          <mxGeometry x="15" y="255" width="370" height="25" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="api-service" value="bo-member-admin-api" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1;" vertex="1" parent="msa-group">
+          <mxGeometry x="480" y="30" width="440" height="290" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="api-desc" value="Admin Business Logic API Service" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="api-service">
+          <mxGeometry x="10" y="30" width="420" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="api-adapter" value="Adapter In (REST Controllers): RestMmbrDetailController, RestMmbrCardController, RestSelfCertController, RestAdultCertController, RestForeignCertController, RestMmbrGrdController, RestExclMmbrController, RestDormMmbrInfmController, RestWdrlMmbrController" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;align=left;spacingLeft=10;" vertex="1" parent="api-service">
+          <mxGeometry x="15" y="55" width="410" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="api-biz" value="Business Layer (Services + Ports): MmbrDetailService, MmbrCardService, SelfCertService, AdultCertService, ForeignCertService, GrdHistoryService, ExclMmbrInfoService, DormMmbrInfmService, WdrlMmbrService, KisaWdrlMmbrInfoService" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;align=left;spacingLeft=10;" vertex="1" parent="api-service">
+          <mxGeometry x="15" y="135" width="410" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="api-domain" value="Domain: mmbracnt, mmbrcard, mmbrcert, mmbrcfg, mmbrgrade, mmbrwdrl, cmdlmm, stnrinfm" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;align=left;spacingLeft=10;" vertex="1" parent="api-service">
+          <mxGeometry x="15" y="215" width="410" height="35" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="api-config" value="Config: Multi DataSource (MBR/EBCH/NEC1/NSC), Redis, AOP Logging" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=9;align=left;spacingLeft=10;" vertex="1" parent="api-service">
+          <mxGeometry x="15" y="255" width="410" height="25" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow-ui-api" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;dashed=1;" edge="1" parent="msa-group" source="ui-service" target="api-service">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="func-box" value="Main Functions" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;fontStyle=1;" vertex="1" parent="msa-group">
+          <mxGeometry x="960" y="30" width="340" height="290" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="func-mmbracnt" value="Member Account: Detail, ID Change, Login History, Modify History, Abnormal, KISA, Family" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1976d2;fontSize=8;align=left;spacingLeft=5;" vertex="1" parent="func-box">
+          <mxGeometry x="10" y="30" width="320" height="35" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="func-mmbrcard" value="Member Card: BookClub Card Register/Search, Unregistered Card Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#388e3c;fontSize=8;align=left;spacingLeft=5;" vertex="1" parent="func-box">
+          <mxGeometry x="10" y="70" width="320" height="35" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="func-mmbrcert" value="Certification: Self Cert, Adult Cert, Foreign Cert, SNS History, Cert Error" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#f57c00;fontSize=8;align=left;spacingLeft=5;" vertex="1" parent="func-box">
+          <mxGeometry x="10" y="110" width="320" height="35" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="func-mmbrgrade" value="Grade: History, Coupon, Exception Member, Membership (Kakao/KB/Lotte Card)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#c2185b;fontSize=8;align=left;spacingLeft=5;" vertex="1" parent="func-box">
+          <mxGeometry x="10" y="150" width="320" height="35" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="func-mmbrwdrl" value="Dormant/Withdrawal: Dormant Member Search/Detail/Restore, Withdrawal Member" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#7b1fa2;fontSize=8;align=left;spacingLeft=5;" vertex="1" parent="func-box">
+          <mxGeometry x="10" y="190" width="320" height="35" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="func-mmbrcfg" value="Settings: Marketing Config, Terms, Member Policy Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eceff1;strokeColor=#546e7a;fontSize=8;align=left;spacingLeft=5;" vertex="1" parent="func-box">
+          <mxGeometry x="10" y="230" width="320" height="35" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="data-group" value="Data Layer" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="650" width="1320" height="120" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="oracle-mbr" value="Oracle DB (MBR Reader)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;fontStyle=1;" vertex="1" parent="data-group">
+          <mxGeometry x="100" y="25" width="100" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="oracle-ebch" value="Oracle DB (EBCH Dormant)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;fontStyle=1;" vertex="1" parent="data-group">
+          <mxGeometry x="240" y="25" width="100" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="oracle-nec1" value="Oracle DB (NEC1 Membership)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;fontStyle=1;" vertex="1" parent="data-group">
+          <mxGeometry x="380" y="25" width="100" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="oracle-nsc" value="Oracle DB (NSC Grade)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;fontStyle=1;" vertex="1" parent="data-group">
+          <mxGeometry x="520" y="25" width="100" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="redis" value="Redis (Session/Auth)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;fontStyle=1;" vertex="1" parent="data-group">
+          <mxGeometry x="660" y="25" width="100" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="s3" value="AWS S3 (File Storage)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=9;fontStyle=1;" vertex="1" parent="data-group">
+          <mxGeometry x="800" y="25" width="100" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="external-group" value="External Systems" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="790" width="1320" height="90" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="fo-member-api" value="fo-member-api" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;fontStyle=1;" vertex="1" parent="external-group">
+          <mxGeometry x="60" y="25" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="bo-admin" value="bo-admin (Unified Admin)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;fontStyle=1;" vertex="1" parent="external-group">
+          <mxGeometry x="180" y="25" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ecp" value="ECP (Notification)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;fontStyle=1;" vertex="1" parent="external-group">
+          <mxGeometry x="300" y="25" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="kisa" value="KISA (Privacy)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;fontStyle=1;" vertex="1" parent="external-group">
+          <mxGeometry x="420" y="25" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rtree" value="RTree (Withdrawal)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;fontStyle=1;" vertex="1" parent="external-group">
+          <mxGeometry x="540" y="25" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="membership" value="Membership (Kakao/KB/Lotte)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=9;fontStyle=1;" vertex="1" parent="external-group">
+          <mxGeometry x="660" y="25" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="hottracks" value="Hottracks (Order)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;fontStyle=1;" vertex="1" parent="external-group">
+          <mxGeometry x="800" y="25" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow-admin-gw" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1" source="admin-browser" target="ingress">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow-gw-ui" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1" source="ingress" target="ui-service">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow-gw-api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1" source="ingress" target="api-service">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
